@@ -1,0 +1,489 @@
+.calendar--table {
+  display: grid;
+  grid-template-columns: 120px 120px 120px 120px 120px 120px 120px;
+  grid-template-rows: 110px 110px 110px 110px 110px 110px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  width: 840px;
+  padding-top: 30px;
+  overflow-x: hidden;
+}
+
+.area {
+  position: relative;
+  width: 120px;
+  height: 110px;
+  border-right: solid 1px #b2b2b2;
+  border-bottom: solid 1px #b2b2b2;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+.area::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 13px;
+}
+
+.area1 {
+  &::before {
+    content: "日";
+    color: #ff4132;
+  }
+}
+
+.area2 {
+  &::before {
+    content: "月";
+  }
+}
+
+.area3 {
+  &::before {
+    content: "火";
+  }
+}
+.area4 {
+  &::before {
+    content: "水";
+  }
+}
+
+.area5 {
+  &::before {
+    content: "木";
+  }
+}
+
+.area6 {
+  &::before {
+    content: "金";
+  }
+}
+
+.area7 {
+  &::before {
+    content: "土";
+    color: #2179c4;
+  }
+}
+
+.area1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.area2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.area3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.area4 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.area5 {
+  grid-area: 1 / 5 / 2 / 6;
+}
+
+.area6 {
+  grid-area: 1 / 6 / 2 / 7;
+}
+
+.area7 {
+  grid-area: 1 / 7 / 2 / 8;
+}
+
+.area8 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.area9 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.area10 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.area11 {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.area12 {
+  grid-area: 2 / 5 / 3 / 6;
+}
+
+.area13 {
+  grid-area: 2 / 6 / 3 / 7;
+}
+
+.area14 {
+  grid-area: 2 / 7 / 3 / 8;
+}
+
+.area15 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.area16 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.area17 {
+  grid-area: 3 / 3 / 4 / 4;
+}
+
+.area18 {
+  grid-area: 3 / 4 / 4 / 5;
+}
+
+.area19 {
+  grid-area: 3 / 5 / 4 / 6;
+}
+
+.area20 {
+  grid-area: 3 / 6 / 4 / 7;
+}
+
+.area21 {
+  grid-area: 3 / 7 / 4 / 8;
+}
+
+.area22 {
+  grid-area: 4 / 1 / 5 / 2;
+}
+
+.area23 {
+  grid-area: 4 / 2 / 5 / 3;
+}
+
+.area24 {
+  grid-area: 4 / 3 / 5 / 4;
+}
+
+.area25 {
+  grid-area: 4 / 4 / 5 / 5;
+}
+
+.area26 {
+  grid-area: 4 / 5 / 5 / 6;
+}
+
+.area27 {
+  grid-area: 4 / 6 / 5 / 7;
+}
+
+.area28 {
+  grid-area: 4 / 7 / 5 / 8;
+}
+
+.area29 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.area30 {
+  grid-area: 5 / 2 / 6 / 3;
+}
+
+.area31 {
+  grid-area: 5 / 3 / 6 / 4;
+}
+
+.area32 {
+  grid-area: 5 / 4 / 6 / 5;
+}
+
+.area33 {
+  grid-area: 5 / 5 / 6 / 6;
+}
+
+.area34 {
+  grid-area: 5 / 6 / 6 / 7;
+}
+
+.area53 {
+  grid-area: 5 / 7 / 6 / 8;
+}
+
+.area35 {
+  grid-area: 5 / 7 / 6 / 8;
+}
+
+.area36 {
+  grid-area: 6 / 1 / 7 / 2;
+}
+
+.area37 {
+  grid-area: 6 / 2 / 7 / 3;
+}
+
+.area38 {
+  grid-area: 6 / 3 / 7 / 4;
+}
+
+.area39 {
+  grid-area: 6 / 4 / 7 / 5;
+}
+
+.area40 {
+  grid-area: 6 / 5 / 7 / 6;
+}
+
+.area41 {
+  grid-area: 6 / 6 / 7 / 7;
+}
+
+.area42 {
+  grid-area: 6 / 7 / 7 / 8;
+}
+
+.bt {
+  border-top: solid 1px #b2b2b2;
+}
+
+.bl {
+  border-left: solid 1px #b2b2b2;
+}
+
+.calendar--table__date {
+  display: block;
+  margin-bottom: 5px;
+  pointer-events: none;
+}
+
+.calendar--table__contents {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-rows: 20px 20px 20px;
+  gap: 0px 0px;
+  pointer-events: none;
+}
+
+.calendar--table__contents > .calendar--table__schedule {
+  display: none;
+}
+
+.area-top {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.area--middle {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.area--bottom {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.calendar--table__schedule {
+  position: relative;
+  z-index: 1;
+  padding: 0 5px;
+  background-color: #82be2c;
+  font-size: 11px;
+  border-radius: 3px;
+  color: #ffffff;
+  overflow-wrap: break-word;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.calendar--table__schedule.schedule--first {
+  width: calc(100% + 4px);
+  border-radius: 3px 0 0 3px;
+  overflow-wrap: normal;
+}
+
+.calendar--table__schedule.schedule--middle {
+  margin-left: -3px;
+  width: calc(100% + 7px);
+  border-radius: 0;
+  overflow-wrap: normal;
+}
+
+.calendar--table__schedule.schedule--last {
+  margin-left: -3px;
+  border-radius: 0 3px 3px 0;
+  overflow-wrap: normal;
+}
+
+.calendar--table__schedule__time {
+  margin-right: 5px;
+}
+
+.calendar--table__schedule__btn {
+  display: none;
+}
+
+.calendar--table__schedule--long {
+  background-color: #3182c8;
+}
+
+.txt--more {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  font-size: 15px;
+  padding: 3px;
+  pointer-events: none;
+}
+
+.calendar--table__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 99;
+}
+
+.calendar--table__modal.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.calendar--table__modal__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 30px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.modal__btn {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -35px;
+  right: 5px;
+}
+
+.modal__btn__inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.modal__btn__inner::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #000000;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.modal__btn__inner::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #000000;
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+
+.modal__contents {
+  margin-top: 10px;
+}
+
+.modal__contents .calendar--table__schedule {
+  position: relative;
+  display: block;
+  width: 80%;
+  color: #fff !important;
+  pointer-events: auto;
+}
+
+.modal__contents .calendar--table__schedule:nth-of-type(n + 2) {
+  margin-top: 3px;
+}
+
+.modal__contents .calendar--table__schedule.schedule--first {
+  border-radius: 3px;
+}
+
+.modal__contents .calendar--table__schedule.schedule--middle {
+  margin-left: 0;
+  border-radius: 3px;
+}
+
+.modal__contents .calendar--table__schedule.schedule--last {
+  margin-left: 0;
+  border-radius: 3px;
+}
+
+.modal__contents .calendar--table__schedule__time {
+  margin: 0 5px;
+}
+
+.modal__contents .calendar--table__schedule__btn {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+  display: block;
+  width: 15px;
+  height: 15px;
+  pointer-events: auto;
+  z-index: 100;
+}
+
+.modal__contents .calendar--table__schedule__btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: red;
+  transform: rotate(45deg);
+}
+
+.modal__contents .calendar--table__schedule__btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: red;
+  transform: rotate(-45deg);
+}
+
+.modal__schedule {
+  margin-top: 10px;
+}
+
+.txt--hidden {
+  font-size: 16px;
+  color: red;
+}
+
+.is-hidden {
+  display: none;
+}
